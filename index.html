@@ -9,13 +9,14 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f0f0f0;
+            background-color: #007bff; /* Blue background */
+            color: #fff;
         }
         .container {
             max-width: 400px;
             margin: 50px auto;
             padding: 20px;
-            background-color: #fff;
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
@@ -36,17 +37,26 @@
             border: 1px solid #ccc;
             box-sizing: border-box;
         }
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
         input[type="submit"] {
             width: 100%;
             padding: 10px;
-            background-color: #007bff;
-            color: #fff;
+            background-color: #fff;
+            color: #007bff;
             border: none;
             border-radius: 4px;
             cursor: pointer;
         }
         input[type="submit"]:hover {
             background-color: #0056b3;
+            color: #fff;
         }
     </style>
 </head>
@@ -54,6 +64,16 @@
     <div class="container">
         <h2>Login</h2>
         <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="age">Age:</label>
+            <input type="text" id="age" name="age" required>
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
             <label for="username">Username:</label>
             <input type="text" id="username" name="username" required>
             <label for="password">Password:</label>
@@ -63,3 +83,5 @@
     </div>
 </body>
 </html>
+
+ 
