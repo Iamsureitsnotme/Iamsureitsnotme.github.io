@@ -1,34 +1,49 @@
-/* Resetting default margin and padding */
-body, h1, p {
+body {
     margin: 0;
     padding: 0;
-}
-
-/* Setting default font family and color */
-body {
     font-family: Arial, sans-serif;
-    color: #333;
-    background-color: #f0f0f0;
+    background-image: url('background.jpg'); /* Replace 'background.jpg' with your image file */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/* Centering container */
-.container {
-    max-width: 800px;
-    margin: 50px auto;
+.login-container {
+    background-color: rgba(255, 255, 255, 0.7); /* Adjust the transparency with the last value (0.7 in this case) */
     padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
-/* Styling heading */
-h1 {
-    color: #444;
+.login-container h2 {
     text-align: center;
     margin-bottom: 20px;
+    color: #333;
 }
 
-/* Styling paragraphs */
-p {
-    line-height: 1.6;
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.login-container input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+.login-container input[type="submit"]:hover {
+    background-color: #0056b3;
 }
